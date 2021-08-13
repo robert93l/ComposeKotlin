@@ -50,8 +50,6 @@ fun DefaultPreview() {
     }}
 
 
-
-
 @Preview(showBackground = true, name = "Texto prueba")
     @Composable
     fun SecondPreview() {
@@ -59,4 +57,10 @@ fun DefaultPreview() {
             Greeting("Que onda perrotes")
         }
 
-}}
+}
+    @Preview(showBackground = true)
+    @Composable
+    fun example2modifier(){
+        Text(text = "modifier#2ejemplo", modifier = Modifier.padding(40.dp))
+    }
+}
